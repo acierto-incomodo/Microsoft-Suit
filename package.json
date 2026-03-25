@@ -1,0 +1,23 @@
+{
+  "name": "microsoft-suit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "private": true,
+  "workspaces": [
+    "Excel/*",
+    "PowerPoint/*",
+    "Word/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "build:web": "npm run build --workspace=apps/web",
+    "build:electron": "npm run build --workspace=apps/electron",
+    "dev": "npm run dev --workspaces --if-present",
+    "install": "npm install --workspaces"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

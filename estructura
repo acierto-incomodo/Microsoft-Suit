@@ -1,0 +1,10 @@
+mi-proyecto/
+├── package.json          ← root (el principal)
+├── apps/
+│   ├── web/
+│   │   └── package.json
+│   └── electron/
+│       └── package.json
+└── packages/
+    └── shared/
+        └── package.json
