@@ -5,19 +5,23 @@
   "main": "main.js",
   "private": true,
   "workspaces": [
-    "Excel/*",
-    "PowerPoint/*",
-    "Word/*"
+    "Excel",
+    "PowerPoint",
+    "Word"
   ],
   "scripts": {
     "build": "npm run build --workspaces",
     "build:web": "npm run build --workspace=apps/web",
     "build:electron": "npm run build --workspace=apps/electron",
     "dev": "npm run dev --workspaces --if-present",
-    "install": "npm install --workspaces"
+    "install:all": "npm install",
+    "install:workspaces": "npm install --workspaces",
+    "ncu": "npx npm-check-updates -u --workspaces",
+    "update:deps": "npx npm-check-updates -u --workspaces && npm install"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "packageManager": "npm@11.12.0"
 }
