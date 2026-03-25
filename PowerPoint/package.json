@@ -13,8 +13,8 @@
   "ncu:install": "npx npm-check-updates -u && npm install"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "StormGamesStudios",
+  "license": "",
   "type": "commonjs",
   "dependencies": {
     "electron-updater": "^6.8.3"

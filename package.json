@@ -11,17 +11,15 @@
   ],
   "scripts": {
     "build": "npm run build --workspaces",
-    "build:web": "npm run build --workspace=apps/web",
-    "build:electron": "npm run build --workspace=apps/electron",
     "dev": "npm run dev --workspaces --if-present",
-    "install:all": "npm install",
+    "install:all": "npm install --workspaces",
     "install:workspaces": "npm install --workspaces",
     "ncu": "npx npm-check-updates -u --workspaces",
     "update:deps": "npx npm-check-updates -u --workspaces && npm install"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "StormGamesStudios",
+  "license": "",
   "type": "commonjs",
   "packageManager": "npm@11.12.0"
 }
